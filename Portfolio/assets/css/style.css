@@ -1,0 +1,248 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family:'Poppins', sans-serif;
+    user-select: none; 
+}
+
+.bodyBg{
+    background-color: #121229; 
+    color: white; 
+}
+.navbar, .aboutMeSection, .skillsSection{
+    width: 95%; 
+    margin: auto; 
+}
+.navbar img{
+    width: 120px; 
+}
+.navbar ul li a:hover{
+    background-color: yellow; 
+    color: black !important ; 
+    transition: .5s; 
+    font-weight: bold;
+}
+.heroSec{
+    padding: 80px; 
+}
+.heroImg img{
+    width: 500px; 
+    margin-right: 60px ;
+}
+.heroContent{
+    padding: 60px; 
+}
+.heroContent h1{
+    width: 200px; 
+}
+.socialMedia a{
+    color: white; 
+} 
+.socialMedia a:hover{
+    background-color: yellow; 
+    color: black; 
+    transition: .5s;
+}
+.socialMedia i{
+    font-size: 30px;
+    margin: 0 15px; 
+}
+.aboutmeImage img{
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.aboutContent{
+    margin-top:10%; 
+    margin-left: 8%; 
+    user-select: none;
+}
+.aboutContent h1{
+    width: 90%;
+    font-weight: bold;
+}
+.aboutContent p{
+    width: 600px; 
+    font-size: 20px; 
+}
+.cseContent, .yearContent{
+    margin-left: 4%;
+}
+.eduSection, .skillsSection, .contactSection{
+    margin-top:7%; 
+}
+.skill li{
+    list-style: none; 
+    margin: 20px 0;
+    padding: 10px;  
+}
+
+.skill{
+    width: 90%; 
+    margin: 60px auto; 
+    padding: 20px; 
+}
+.bar{
+     background-color: #353b48;
+     display: block;
+     width:550px;
+     height: 20px; 
+     border: 1px solid rgba(0,0,0,0.3);
+     border-radius: 10px; 
+     overflow: hidden; 
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.22);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height: 20px; 
+    float: left; 
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html, .css, .bootstrap, .figma{
+    width: 90%; 
+    animation: 3s;
+}
+.javascript{
+    width: 70%; 
+    animation: 3s;
+}
+.jquery{
+    width: 80%; 
+    animation: 3s;
+}
+.contactSection a{
+    margin-left: 12%;
+    padding: 5px; 
+    margin-top: 3%;
+}
+.contactOne{
+    margin-top: 5%;
+}
+.contactTwo{
+    margin-top: 3%;
+}
+.contactOne input, .contactTwo input{
+    width: 600px;
+    border-radius: 10px; 
+    padding: 10px; 
+    margin-top: 15px; 
+}
+.workCOntent{
+    margin-left: 3%;
+}
+.workImages img{
+    width: 450px; 
+    height: 300px; 
+    justify-content: center; 
+    align-items: center;
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+.workImages img:hover{
+    bottom: 20%;
+    transition: .5s; 
+    cursor: pointer;
+}
+
+.message input{
+    width: 100%;
+    height: 200px;
+    padding: 5px;  
+    margin-top: 2%; 
+    border-radius: 10px; 
+}
+.message{
+    width: 89%; 
+    margin: auto;
+    margin-top: 3%; 
+}
+
+/*Code For Mobile Responsive*/
+@media  (min-width:320px) and (max-width:500px) {
+    .heroContent{
+        padding: 4px;
+    }
+    .heroImg img{
+        width: 235px;
+    }
+    .socialMedia{
+        display: inline-flex;
+        flex-direction: row;
+        margin-bottom: 17%;
+        margin-right: 3%;
+    }
+    .aboutmeImage img{
+        width: 337px;
+        margin-left: 5%;
+    }
+    .aboutContent p{
+        font-size: 13px;
+        width: 324px;
+    }
+    .eduSection h1{
+        font-size: 25px;
+    }
+    .educationList{
+        margin-left: 51px;
+    }
+    .eduSection, .skillsSection, .contactSection{
+        margin-top: 30%;
+    }
+    .skill{
+        margin-left: 9px;
+    }
+    .bar{
+        width: 290px;
+    }
+    .yearContent{
+        margin-left: -1%;
+    }
+    .yearContent h3{
+        font-size: 20px;
+    }
+    .cseContent{
+        margin-left: 7%;
+    }
+    .cseContent h2{
+        font-size: 26px;
+    }
+    .matricContent{
+        margin-left: 8%;
+    }
+    .skillsSection a{
+        margin-bottom: 6%;
+    }
+    .workImages img{
+        display: flex; 
+        flex-direction: column; 
+        width: 380px;
+        margin-bottom: 8%;
+    }
+    .contactSection a{
+        margin-top: 5%;
+    }
+    .contactOne input, .contactTwo input{
+        width: 385px; 
+    }
+    .contactContentOne {
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+    .message{
+        margin-right: 31px;
+        margin-top: 2%;
+    }
+    .message input{
+        width: 383px; 
+    }
+    .copyrightSection p{
+        font-size: 13px; 
+    }
+} /*Code For Mobile Responsive Ends*/
